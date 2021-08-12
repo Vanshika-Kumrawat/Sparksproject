@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Details</title>
+    <link rel="stylesheet" href="detail.css">
+</head>
+<body>
+        <div class="heading">
+            <h2>Please fill the  details</h2>
+        </div>
+<div id="smart-button-container">
+    <div style="text-align: center; font-family: Cascadia Code;"><label for="description">Cause for donation </label><input type="text" name="descriptionInput" id="description" maxlength="127" value=""></div>
+      <p id="descriptionError" style="visibility: hidden; color:red; text-align: center;">Please enter a description</p>
+    <div style="text-align: center; font-family: Cascadia Code; font-size: 20px  ">Donate now to contribute for a good cause</div>
+      <p id="priceLabelError" style="visibility: hidden; color:red; text-align: center;">Please enter a price</p>
+    <div id="invoiceidDiv" style="text-align: center; display: none;"><label for="invoiceid"> </label><input name="invoiceid" maxlength="127" type="text" id="invoiceid" value="" ></div>
+      <p id="invoiceidError" style="visibility: hidden; color:red; text-align: center;">Please enter an Invoice ID</p>
+    <div style="text-align: center; margin-top: 0.625rem;" id="razorpay-button-container"></div>
+  </div>
+  
+ 
+ <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HiQBIn1NyUCHz3" async> </script> </form>
+  <script src="payment.js"></script>
+
+</body>
+</html>
+
+
